@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<style>
+	/* 선택자 : 스타일을 적용할 대상을 가르키는 css 문법
+			선택자 {
+					속성1 : 값1;
+					속성2 : 값2;
+					...
+			}
+			1.공용 선택자/ 전테 선택자/Universal Selector
+			2.글래스 (선택자): .icons
+			3.아이디(선택자): #icons
+			4.태그 선택자 : p / h1 / img...
+			5. 그룹 선택자 : p, h1, a
+			
+			*/
+	.text-center {
+			text-align: center;
+	}
+	.d-none{
+		display: none; /*표시안함*/
+	}
+	 h1, h2, h3 {
+	 		text-align: center;
+	  }
+	  .profile{
+	  		text-align: center;
+	  }
+	 
+	.icons{
+		display: flex;  /*표시 방법 : flex */
+		justify-content: center; /*컨텐츠 가운데 정렬*/
+		column-gap: 1rem; /*컬럼 간격 표시*/
+		text-align: center; /*택스트 가운데 정렬*/
+		
+	}
+	</style>
+	
+</head>
+<body class="text-center">
+	<!-- HTML 주석 -->
+	<h1 class="d-none">about</h1>
+	<div class="profile">
+		<img src="images/photo.png" alt ="프로필">
+	</div>
+	<h2>kim eunji</h2>
+	<p>한울직업전문학교</p>
+	<h3>social</h3>
+	<div class="icons">
+		<div>
+			<img src="images/blog.png" alt ="블로그">
+			<p>blog</p>
+		</div>
+		<div>
+			<img src="images/email.png" alt ="이메일">
+			<p>email</p>
+		</div>
+		<div>
+			<img src="images/phone.png" alt ="전화번호">
+			<p>phone number</p>
+		</div>
+	</div>
+</body>
+</html>
